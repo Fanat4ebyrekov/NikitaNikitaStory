@@ -1,0 +1,35 @@
+﻿<Page x:Class="NikitaNikitaStory.Pages.Page21"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NikitaNikitaStory.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page21">
+
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Image Source="C:\Users\USER\source\repos\NikitaNikitaStory\NikitaNikitaStory\Images\5.jpg" Grid.RowSpan="2" Stretch="Fill"
+            />
+        <TextBlock Text="А: Я тебе не верю, если ты и в правду из будущего, докажи это!" Foreground="White" FontFamily="Yu Gothic" TextWrapping="Wrap" FontSize="22" Grid.Row="2" VerticalAlignment="Bottom"
+            >
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF13781D" Offset="1"/>
+                    <GradientStop Color="#FF0E170F"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <Button x:Name="button21"
+                Grid.RowSpan="2"
+                Opacity="0"
+                Click="button21_Click"
+            />
+        <Frame x:Name="frame21" Grid.RowSpan="2"
+            />
+    </Grid>
+</Page>
